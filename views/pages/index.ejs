@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+    <%- include("../partials/head");%>
+<body class="container">
+    <%- include("../partials/header");%> 
+    <main>
+        <div class="jumbotron">
+            <h1 class="display-4">Node com EJS</h1>
+            <p class="lead">Vamos aprender a trabalhar com arquivos EJS</p>
+            <hr class="my-4">
+            <p></p>
+            <a class="btn btn-primary btn-lg" href="#" role="button">Vamos Aprender</a>
+          </div>
+
+          <ul>
+            <% qualitys.forEach(function(quality){ %>
+                <li>
+                    <strong><%= quality.title %> </strong><%= quality.menssage %> 
+                </li>
+            <% }) %> 
+            
+        </ul>
+
+    </main>
+    <%- include("../partials/footer"); %> 
+</body>
+</html>
